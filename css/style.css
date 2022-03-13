@@ -1,0 +1,81 @@
+*
+{
+    padding: 0%;
+}
+
+body
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+
+nav.submenu
+{
+    background-color: #222222;
+    font-size: 10px;
+    line-height: 12px;
+    color: #F3F3F3;
+}
+
+nav.menu
+{
+    top: 20px;
+    
+    background: #F0A83E;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+}
+
+article.texto-banner
+{
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #3C2313;
+}
+
+article.texto-banner span
+{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+article.texto-banner span.boton
+{
+    color: #FFFFFF;
+    background: #F0A83E;
+    border-radius: 5px;
+}
+
+article p.nombre-producto
+{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #3C2313;
+}
+
+article p.precio-producto
+{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #F0A83E;
+}
+
+section article.redes-sociales
+{
+    background: #3C2313;
+    color:white;
+}
+
+p.derechos
+{
+    color: white;
+    background: #222222;
+    text-align: center;
+}

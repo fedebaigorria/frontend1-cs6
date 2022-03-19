@@ -1,6 +1,7 @@
 *
 {
-    padding: 0%;
+    margin: 0px;
+    box-sizing: content-box;
 }
 
 body
@@ -8,47 +9,127 @@ body
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
+    width: 1024px;
 }
 
-nav.submenu
+h1,h2,h3,h4,p
 {
-    background-color: #222222;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+}
+
+header
+{
     font-size: 10px;
-    line-height: 12px;
-    color: #F3F3F3;
-}
-
-nav.menu
-{
-    top: 20px;
-    
-    background: #F0A83E;
-    font-size: 13px;
-    line-height: 15px;
-
     color: #FFFFFF;
 }
 
-article.texto-banner
+li
+{
+    list-style: none;
+}
+
+header div.submenu
+{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div.submenu>span
+{
+    padding: 4px 90px;
+}
+
+header div.submenu div.idioma
+{
+    padding: 4px 60px;
+}
+
+header div.submenu div span
+{
+    padding-left: 20px;
+}
+
+header div.menu
+{
+    background: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div.menu img
+{
+    padding: 20px 40px;
+}
+
+header div.menu nav ul
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    gap : 20px;
+    padding: 24px 40px;
+}
+
+div.banner
 {
     font-size: 30px;
     line-height: 35px;
     text-align: center;
     color: #3C2313;
+    display: flex;
+    justify-content: flex-end;
 }
 
-article.texto-banner span
+div.banner pre
+{
+    position: absolute;
+    margin-top: 150px;
+    margin-right: 12px;
+    width: 365px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.banner pre h3
+{
+    font-size: 30px;
+    line-height: 35px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+
+}
+
+div.banner pre p
 {
     font-size: 16px;
     line-height: 19px;
+    color: #3C2313;
+    margin-bottom: 12px;
 }
 
-article.texto-banner span.boton
+div.banner pre p.boton
 {
-    color: #FFFFFF;
-    background: #F0A83E;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    background-color: #F0A83E;
     border-radius: 5px;
+    padding: 15px 23px;
+    margin: auto;
 }
+
+
+
+
+
+
+
 
 article p.nombre-producto
 {
@@ -56,6 +137,7 @@ article p.nombre-producto
     font-size: 15px;
     line-height: 18px;
     color: #3C2313;
+    align-self: center;
 }
 
 article p.precio-producto

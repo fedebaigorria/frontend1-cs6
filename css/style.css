@@ -19,15 +19,16 @@ h1,h2,h3,h4,p
     font-weight: normal;
 }
 
+li
+{
+    list-style: none;
+}
+
+/*------------------------------------HEADER--------------------------------*/
 header
 {
     font-size: 10px;
     color: #FFFFFF;
-}
-
-li
-{
-    list-style: none;
 }
 
 header div.submenu
@@ -72,7 +73,9 @@ header div.menu nav ul
     gap : 20px;
     padding: 24px 40px;
 }
+/*-------------------------------------MAIN---------------------------------*/
 
+/*------------------------------------BANNER--------------------------------*/
 div.banner
 {
     font-size: 30px;
@@ -86,12 +89,11 @@ div.banner
 div.banner pre
 {
     position: absolute;
-    margin-top: 150px;
+    margin-top: 155px;
     margin-right: 12px;
     width: 365px;
     display: flex;
     flex-direction: column;
-
 }
 
 div.banner pre h3
@@ -102,7 +104,6 @@ div.banner pre h3
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 12px;
-
 }
 
 div.banner pre p
@@ -124,40 +125,223 @@ div.banner pre p.boton
     margin: auto;
 }
 
+/*-----------------------------PRODUCTO-DESTACADO-------------------------*/
 
-
-
-
-
-
-
-article p.nombre-producto
+main section.productos-destacados
 {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    color: #3C2313;
-    align-self: center;
+    margin: 20px 95px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-article p.precio-producto
+div.menu h2
 {
-    font-weight: 500;
+    padding-top:10px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    color: #3C2313;
+    font-weight: 700;
+    line-height: 47px;
+}
+
+div.menu span
+{
+    font-size: 15px;
+    line-height: 18px;
+    color: #666666;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+main section.productos-destacados div.productos
+{
+    margin-top: 50px;
+    display: flex;
+}
+
+main section.productos-destacados div.productos article
+{
+    margin-right: 21px;
+    background: #FBFAF6;
+    padding-bottom: 8px;
+}
+
+main section.productos-destacados div.productos article p
+{
+    font-weight: 600;
     font-size: 15px;
     line-height: 18px;
 
+    color: #3C2313;
+}
+
+main section.productos-destacados div.productos article p.precio-producto
+{
     color: #F0A83E;
 }
 
-section article.redes-sociales
+main section.productos-destacados div.contacto
+{
+    margin: 78px;
+}
+
+main section.productos-destacados div.contacto h2
+{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+
+    color: #3C2313;
+    margin-bottom: 20px;
+}
+
+main section.productos-destacados div.contacto input
+{
+    padding: 15px;
+    width: 340px;
+    background: #3C2313;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+main section.productos-destacados div.contacto input::placeholder
+{
+    color:white;
+    font-size: 9px;
+}
+
+main section.productos-destacados div.contacto div.botones
+{
+    margin-top: 25px;
+}
+
+main section.productos-destacados div.contacto div.botones button
+{
+    background: #8A8787;
+    border-radius: 15px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 8px 32px;
+    width: 60px;
+    text-align: center;
+    border-style: none;
+}
+
+main section.productos-destacados div.contacto div.botones button.btn-enviar
+{
+    background: #F0A83E;
+}
+
+main section.suscripcion
+{
+    background: #F0A83E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.suscripcion div.texto
+{
+    padding: 10px 23px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+main section.suscripcion div.texto span
+{
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+main section.suscripcion form
+{
+    display: flex;
+    padding: 15px 58px;
+}
+
+main section.suscripcion form input
+{
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 15px 8px;
+    border-style: none;
+    margin-right: 5px;
+    width: 270px;
+}
+
+main section.suscripcion form button
+{
+    font-size: 9px;
+    line-height: 11px;
+    color: #FFFFFF;
+    background: #3C2313;
+    border-radius: 15px;
+    width: 70px;
+}
+
+/*------------------------------------FOOTER--------------------------------*/
+footer section
 {
     background: #3C2313;
     color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-p.derechos
+footer section div.redes-sociales
+{
+    padding: 23px 70px;
+}
+
+footer section>img
+{
+    padding-right: 79px;
+}
+
+footer section div.redes-sociales div
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer section div.redes-sociales div div
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+footer section div.redes-sociales div div h2
+{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+footer section div.redes-sociales div div p
+{
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #8A8787;
+}
+
+
+div.derechos
 {
     color: white;
     background: #222222;
     text-align: center;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 4px;
 }

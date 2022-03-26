@@ -1,18 +1,21 @@
 *
 {
     margin: 0px;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 body
 {
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    width: 1024px;
+    width: 54vw;
+    margin : auto;
+    left: 0;
+    right: 0;
 }
 
-h1,h2,h3,h4,p
+h3,h4,p
 {
     font-family: 'Roboto';
     font-style: normal;
@@ -27,7 +30,6 @@ li
 /*------------------------------------HEADER--------------------------------*/
 header
 {
-    font-size: 10px;
     color: #FFFFFF;
 }
 
@@ -36,6 +38,7 @@ header div.submenu
     background-color: #222222;
     display: flex;
     justify-content: space-between;
+    font-size: 10px;
 }
 
 header div.submenu>span
@@ -63,7 +66,14 @@ header div.menu
 header div.menu img
 {
     padding: 20px 40px;
+    height: 9 vh;
+    width: 9 vw;
 }
+
+header div.menu img.menu-hamburguesa
+    {
+        display: none;
+    }
 
 header div.menu nav ul
 {
@@ -78,6 +88,11 @@ header div.menu nav ul
 /*------------------------------------BANNER--------------------------------*/
 div.banner
 {
+
+    background: url("../img/bowl-and-pet-daities-on-green-background 1.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 409px;
     font-size: 30px;
     line-height: 35px;
     text-align: center;
@@ -89,7 +104,7 @@ div.banner
 div.banner pre
 {
     position: absolute;
-    margin-top: 155px;
+    top: 30%;
     margin-right: 12px;
     width: 365px;
     display: flex;
@@ -156,16 +171,24 @@ div.menu span
 
 main section.productos-destacados div.productos
 {
-    margin-top: 50px;
+    margin: 50px 0px;
     display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 main section.productos-destacados div.productos article
 {
-    margin-right: 21px;
+    margin: 0px 21px 20px 0px;
     background: #FBFAF6;
     padding-bottom: 8px;
 }
+
+main section.productos-destacados div.productos article img
+{
+    width: 100%;
+}
+
 
 main section.productos-destacados div.productos article p
 {
@@ -181,9 +204,11 @@ main section.productos-destacados div.productos article p.precio-producto
     color: #F0A83E;
 }
 
-main section.productos-destacados div.contacto
+main section.productos-destacados div.contacto form
 {
-    margin: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main section.productos-destacados div.contacto h2
@@ -199,7 +224,7 @@ main section.productos-destacados div.contacto h2
 main section.productos-destacados div.contacto input
 {
     padding: 15px;
-    width: 340px;
+    width: 360px;
     background: #3C2313;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -224,8 +249,8 @@ main section.productos-destacados div.contacto div.botones button
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    padding: 8px 32px;
-    width: 60px;
+    padding: 8px;
+    width: 100px;
     text-align: center;
     border-style: none;
 }
@@ -241,6 +266,7 @@ main section.suscripcion
     color: white;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 main section.suscripcion div.texto
@@ -284,6 +310,7 @@ main section.suscripcion form button
     background: #3C2313;
     border-radius: 15px;
     width: 70px;
+    border-style: none;
 }
 
 /*------------------------------------FOOTER--------------------------------*/
@@ -298,7 +325,7 @@ footer section
 
 footer section div.redes-sociales
 {
-    padding: 23px 70px;
+    margin: 23px 0px 0px 70px;
 }
 
 footer section>img
@@ -309,7 +336,7 @@ footer section>img
 footer section div.redes-sociales div
 {
     display: flex;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 footer section div.redes-sociales div div
@@ -344,4 +371,94 @@ div.derechos
     font-size: 10px;
     line-height: 12px;
     padding: 4px;
+}
+
+
+@media (max-width: 912px) 
+{
+    header div.submenu
+    {
+        display: none;
+    }
+
+    header div.menu
+    {
+        height: 54px;
+    }
+
+    header div.menu img
+    {
+        width: 240px;
+        height: 60px;
+    }
+
+    header div.menu nav
+    {
+        display: none;
+    }
+
+    header div.menu img.menu-hamburguesa
+    {
+        display: inline;
+        width: 100px;
+    }
+
+    main section div.banner
+    {
+        height: 440px;
+    }
+    
+    main section.productos-destacados div.productos
+    {
+        flex-direction: column;
+    }
+
+    div.banner pre p
+    {
+        display: flex;
+        justify-content: right;    
+    }
+
+    div.banner pre p.boton
+    {
+        width: 140px;
+        margin-right : 0px;
+    }
+
+    section.productos-destacados div.menu span
+    {
+        padding : 0px 2px;
+    }
+
+    main section.suscripcion form
+    {
+        padding: 10px;
+    }
+
+    main section.suscripcion form input
+    {
+        width: 300px;
+    }
+
+    main section.suscripcion form button
+    {
+        width: 100px;
+    }
+
+    footer section
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer section img 
+    {
+        padding: 5px 0px;
+    }
+
+    .redes-sociales
+    {
+        order:1;
+    }
+
 }
